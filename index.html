@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="images/AKgold.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Arthur Kandybowicz</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Portfolio - AK.</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-item active">Accueil</a></li>
+        <li><a href="#about" class="nav-item">Mon histoire</a></li>
+        <li><a href="#skills" class="nav-item">Compétences</a></li>
+        <li><a href="#projects" class="nav-item">Projets</a></li>
+        <li><a href="#resume" class="nav-item">CV</a></li>
+        <li><a href="#contact" class="nav-item">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <div id="bubbles"></div>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="section section-hero visible">
+      <h1>Arthur Kandybowicz</h1>
+      <p>Jeune développeur ambitieux & créatif.</p>
+      <a href="#projects" class="btn-primary">Voir mes projets</a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about-container">
+      <img src="images/LNP_2106_copie_4.jpg" alt="Profil" class="profile-pic">
+      <div>
+        <h2>Mon Histoire</h2> <br>
+        <p>Étudiant en reconversion à Epitech-Nice, passionné par le développement et les nouvelles technologies. 
+          Curieux et motivé, je m’intéresse à la Data, la Cybersécurité, le Cloud, le DevOps et l’IoT. <br>Je cherche à
+          acquérir des compétences solides en programmation et en architecture logicielle tout en explorant la créativité
+          dans mes projets, et je suis toujours prêt à relever de nouveaux défis pour concevoir des solutions fiables,
+          performantes et innovantes.
+          </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Langages Informatiques</h2>
+
+      <h3>en cours d'apprentissage...</h3>
+      <div class="skills-container">
+        <!-- Front-end -->
+        <div class="skills-category">
+          <h3>Front-end</h3>
+          <div class="skills-grid">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">React</div>
+          </div>
+        </div>
+
+        <!-- Back-end -->
+        <div class="skills-category">
+          <h3>Back-end</h3>
+          <div class="skills-grid">
+            <div class="skill-card">JAVA</div>
+            <div class="skill-card">Node.js</div>
+            <div class="skill-card">Express</div>
+            <div class="skill-card">SQL</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <h2>Projets</h2>
+
+      <div class="filter-buttons">
+        <button data-filter="all" class="active">Tous</button>
+        <button data-filter="web">Web</button>
+        <button data-filter="design">Design</button>
+        <button data-filter="playground">Playground</button>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card" data-category="web">
+          <h3>Portfolio Web</h3>
+          <p>Site personnel responsive réalisé en HTML, CSS et JS pour exposer mes projets et compétences.</p>
+        </div>
+        <div class="project-card" data-category="design">
+          <h3>Projet Design</h3>
+          <p>Exploration UI/UX minimaliste sur Figma, avec focus sur la lisibilité et l’expérience utilisateur.</p>
+        </div>
+        <div class="project-card" data-category="web">
+          <h3>Blog Tech</h3>
+          <p>Plateforme de blog dynamique utilisant Node.js et Express pour partager des articles techniques.</p>
+        </div>
+        <div class="project-card" data-category="design">
+          <h3>Site vitrine photo</h3>
+          <p>Mini site pour mettre en avant mes travaux photographiques avec une navigation simple et esthétique.</p>
+        </div>
+        <div class="project-card" data-category="playground">
+          <h3>À venir ...</h3>
+          <p>Projet en cours de développement pour tester de nouvelles technologies et concepts de codage.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CV -->
+    <section id="resume" class="cv-container">
+  <h2>Mon CV</h2>
+  <div class="cv-preview">
+    <iframe src="CV_Arthur_KANDYBOWICZ_.pdf"></iframe>
+  </div>
+  <div class="cv-actions">
+    <a href="CV_Arthur_KANDYBOWICZ_.pdf" download class="btn-primary cv-btn">📄 Télécharger mon CV</a>
+    <a href="cvonline/index.html" target="_blank" class="btn-primary cv-btn">🌐 Accéder à mon CV en ligne</a>
+  </div>
+</section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Nom complet" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="subject" placeholder="Sujet" required>
+        <textarea id="message" placeholder="Votre message" rows="5" required></textarea>
+        <button type="submit" class="btn-primary">Envoyer</button>
+      </form>
+      <p id="form-feedback"></p>
+    </section>
+
+  </main>
+
+  <div id="lightbox"></div>
+
+  <footer>
+    <p>© 2025 Arthur Kandybowicz – Tous droits réservés</p>
+  </footer>
+
+</body>
+
+</html>
